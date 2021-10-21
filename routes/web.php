@@ -19,13 +19,14 @@ use App\Models\user;
 
 Route::get('/', function () {
     return view('home', [
-        "title" => "Home"
-
+        "title" => "Home",
+        "active" => "home"
     ]);
 });
 
 Route::get('/about', function () {
     return view('about', [
+        "active" => "About",
         "title" => "About",
         "name" => "Anjara darojatun nisa",
         "email" => "193040006.anjara@mail.unpas.ac.id",
